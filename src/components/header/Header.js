@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './header.scss';
 import logo from '../../assets/tmovie.png';
 const headerNav = [
@@ -7,19 +7,10 @@ const headerNav = [
         display: 'Home',
         path: '/'
     },
-    {
-        display: 'Movie',
-        path: '/movie'
-    },
-    {
-        display: 'TV Series',
-        path: '/tv'
-    },
+
 ];
 const Header = () => {
-    const { pathname } = useLocation();
     const headerRef = useRef(null);
-    const active = headerNav.findIndex(e => e.path === pathname);
     useEffect(() => {
         const shrinkHeader = () => {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -43,7 +34,7 @@ const Header = () => {
                 <ul className="header__nav">
                     {
                         headerNav.map((e, i) => (
-                            <li key={i} className={`${i === active ? 'active' : ''}`}>
+                            <li key={i} >
                                 <Link to={e.path}>
                                     {e.display}
                                 </Link>

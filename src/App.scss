@@ -11,14 +11,7 @@
 html {
     font-size: 100%;
 
-    @include tablet {
-        font-size: 80%;
-    }
 
-    @include mobile {
-        font-size: 60%;
-        ;
-    }
 }
 
 body {
@@ -28,9 +21,6 @@ body {
     background-color: $body-bg;
     color           : $txt-color;
 
-    @include mobile {
-        margin-bottom: 3rem;
-    }
 }
 
 a {
@@ -74,6 +64,11 @@ iframe {
 .mb-2 {
     margin-bottom: 2rem;
 }
+.mx-10 {
+    margin-right: 6rem;
+    margin-left: 6rem
+}
+
 
 .section_header {
     @include flex(center, space-between);

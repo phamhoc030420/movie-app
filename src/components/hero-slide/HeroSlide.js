@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useHistory } from 'react-router'
 import tmdbApi, { category, movieType } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
 import './hero-slide.scss';
@@ -16,7 +15,6 @@ const HeroSlide = () => {
             try {
                 const response = await tmdbApi.getMoviesList(movieType.popular, { params });
                 setMovieItems(response.results.slice(0, 6));
-                console.log(response);
             }
             catch {
                 console.log('error');
@@ -51,7 +49,6 @@ const HeroSlide = () => {
     )
 }
 const HeroSlideItem = props => {
-    let history = useHistory();
     const item = props.item;
     const background = apiConfig.originalImage(item.backdrop_path ? item.backdrop_path : item.poster_path);
     const setModalActive = async () => {
@@ -78,7 +75,7 @@ const HeroSlideItem = props => {
                     <h2 className="title">{item.title}</h2>
                     <div className="overview">{item.overview}</div>
                     <div className="btns">
-                        <Button onClick={() => history.push('/movie/' + item.id)}>
+                        <Button onClick={setModalActive}>
                             Watch now
                         </Button>
                         <OutlineButton onClick={setModalActive}>
