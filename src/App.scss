@@ -18,14 +18,14 @@ body {
     font-family     : $font-family;
     font-weight     : 400;
     line-height     : 1.5;
-    background-color: $body-bg;
-    color           : $txt-color;
+    background-color: $body-bg !important;
+    color           : $txt-color !important;
 
 }
 
 a {
-    text-decoration: none;
-    color          : unset;
+    text-decoration: none !important;
+    color          : unset !important;
 }
 
 @media (hover:hover) {
@@ -52,7 +52,7 @@ iframe {
     border: 0;
 }
 
-.container {
+.containers {
     max-width: 1660px;
     margin   : auto;
 }
@@ -72,4 +72,5 @@ iframe {
 
 .section_header {
     @include flex(center, space-between);
+    margin-bottom:50px !important;
 }

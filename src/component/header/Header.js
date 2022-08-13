@@ -29,7 +29,7 @@ const Header = () => {
             <div className="header__wrap container">
                 <div className="logo">
                     <img src={logo} alt="" />
-                    <a href="http://localhost:8080">HMovies</a>
+                    <Link to="/">HMovies</Link>
                 </div>
                 <ul className="header__nav">
                     {

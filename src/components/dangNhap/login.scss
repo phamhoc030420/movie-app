@@ -1,0 +1,257 @@
+#oopss {
+    background: linear-gradient(-45deg, rgba(255,243,0, 1), rgba(239,228,0, 1));
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5em;
+    z-index: 9999;
+    #error-text {
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Shabnam', Tahoma, sans-serif;
+        color: #000;
+        direction: rtl;
+        img {
+            margin: 85px auto 20px;
+            height: 342px;
+        }
+        span {
+            position: relative;
+            font-size: 3.3em;
+            font-weight: 900;
+            margin-bottom: 50px;
+        }
+        p {
+            &.p-a {
+                font-size: 19px;
+                // margin: 30px 0 15px 0;
+            }  
+            &.p-b {
+                font-size: 15px;
+            }  
+        }
+        .back { // Homepage bButton
+            background: #fff;
+            color: #000;
+            font-size: 30px;
+            text-decoration: none;
+            margin: 2em auto 0;
+            padding: .7em 2em;
+            border-radius: 500px;
+            box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #fff300;
+            font-weight: 900;
+            transition: all 300ms ease; 
+            &:hover {
+                transform: translateY(-13px);
+                box-shadow: 0 35px 90px 4px rgba(0,0,0, .3), inset 0px 0 0 3px #000;
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot');
+    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff') format('woff'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff2') format('woff2'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot');
+    src: url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff') format('woff'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff2') format('woff2'),
+        url('https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+.login-background {
+    height    : 100vh;
+    background-image:url('../../assets/image_login.jpg');
+    height    : 100 vh !important;
+
+    .btns {
+        width        :420px;
+        text-align    : center;
+        margin       : 10px 30px !important;
+        height       : 50px !important;
+        border-radius: 20px !important;
+        outline      : none !important;
+        border       : none !important;
+        background   : linear-gradient(135deg, rgb(185, 92, 56) 0%, rgb(9, 90, 29) 100%) !important;
+        color        : white !important;
+        font-size: 20px;
+    }
+    .register{
+        display: block ;
+        text-align: center;
+        cursor: pointer;
+        margin-top:20px;
+    }
+    .login-container {
+        border          : solid 1px;
+        width           : 500px;
+        height          : 600px;
+        margin          : auto;
+        border-radius   : 15px;
+        padding         : 10px;
+        position        : absolute;
+        top             : 0;
+        bottom          : 0;
+        right           : 0;
+        left            : 0;
+        background-color: rgba(0,0,0,0.75);
+        
+
+        .login-content {
+            
+            padding: 30px;
+            
+            .text-login {
+                font-size     : 30px;
+                font-weight   : bold;
+                padding-bottom: 20px;
+                text-align    : center;
+                 color : #fff;
+                
+                
+            }
+
+            .login-input {
+                margin        : auto;
+                padding-bottom: 20px;
+                color:white;
+
+                .input {
+                    padding-bottom: 20px;
+                    
+                }
+                .icon {
+                    margin-right  : 5px;
+                    padding-bottom: 5px;
+                }
+                .from-control{
+                    background-color: rgb(39, 38, 38);
+                    color: #fff;
+                    border-color:black;
+                }
+
+                .custom-password {
+                    position: relative;
+
+                    .far {
+                        position: absolute;
+                        right   : 6px;
+                        top     : 10px;
+                        cursor  : pointer;
+                    }
+                }
+            }
+
+            .btn {
+                width        : 100%  !important;
+                margin       : 10px 0 !important;
+                height       : 50px !important;
+                border-radius: 20px !important;
+                outline      : none !important;
+                border       : none !important;
+                background   : linear-gradient(135deg, rgb(185, 92, 56) 0%, rgb(9, 90, 29) 100%) !important;
+                // padding      : auto !important;
+                // padding-bottom: 40px !important;
+                color        : white !important;
+                font-size: 8px;
+            }
+            
+            
+            
+
+            .forgot {
+                color:#fff;
+                font-size: 14px;
+                cursor   : pointer;
+            }
+
+            .face {
+                background-color: blue;
+                color           : white;
+                font-size       : 40px;
+                width           : 60px;
+                height          : 60px;
+                border-radius   : 30px;
+                padding-top     : 10px;
+                cursor          : pointer;
+
+            }
+
+            .goggle {
+                background-color: red;
+                color           : white;
+                font-size       : 40px;
+                margin-right    : 20px;
+                width           : 60px;
+                height          : 60px;
+                border-radius   : 30px;
+                padding-top     : 10px;
+                cursor          : pointer;
+            }
+
+            .withoutacc {
+                cursor    : pointer;
+                text-align: center;
+                margin-top: 20px;
+
+            }
+        }
+        
+
+    }
+}
+
+.table_hover:hover {
+    background-color: rgb(226, 215, 215);
+
+
+}
+
+.but {
+    background-color: blue;
+    border-radius   : 15px;
+    margin-right    : 10px;
+}
+
+.buts {
+    background-color: red;
+    border-radius   : 15px;
+
+}
+
+.input1 {
+    border-radius: 3px;
+    border       : 1px solid gray;
+    outline      : none;
+    padding-left : 10px;
+}
+
+.pagination {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 50px;
+
+}
+
+.photo {
+    margin-top     : 40px;
+    display        : flex;
+    justify-content: center;
+}
+.or{
+    color:white;
+}
