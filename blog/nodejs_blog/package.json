@@ -1,0 +1,57 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch  src/resources/scss/app.scss  src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phamhoc030420/nodejs_blog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "basic"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phamhoc030420/nodejs_blog/issues"
+  },
+  "homepage": "https://github.com/phamhoc030420/nodejs_blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "antd": "^4.22.3",
+    "cors": "^2.8.5",
+    "create-readme": "^2.1.3",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.10",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "node-localstorage": "^2.2.1",
+    "react-toastify": "^9.0.7",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  }
+}

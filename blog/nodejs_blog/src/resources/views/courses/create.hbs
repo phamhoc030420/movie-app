@@ -1,0 +1,24 @@
+<div class="mt-4">
+    <h3>Thêm Khóa Học</h3>
+    <form method="POST" action="/courses/store" onsubmit="return validateCreate()">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Tên Khóa Học</label>
+            <input name="name" type="text" class="form-control" id="nameCourses" autocomplete="off" required  title="Vui lòng không nhập kí tự đặc biệt" pattern='([a-zA-Z0-9]+)'>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Mô Tả</label>
+            <input name="description" type="text" class="form-control" id="description" autocomplete="off"  required title="Vui lòng không nhập kí tự đặc biệt" pattern='([a-zA-Z0-9]+)'>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Video ID</label>
+            <input name="videoId" type="text" class="form-control" id="videoId" autocomplete="off"  required title="Vui lòng không nhập kí tự đặc biệt" pattern='([a-zA-Z0-9]+)'>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Trình Độ</label>
+            <input name="level" type="text" class="form-control" id="level" autocomplete="off"  required title="Vui lòng không nhập kí tự đặc biệt" pattern='([a-zA-Z0-9]+)'>
+        </div>
+
+
+        <button type="submit" value="submit"  class="btn btn-primary">Add</button>
+    </form>
+</div>

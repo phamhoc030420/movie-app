@@ -1,0 +1,20 @@
+<div class="mt-4" style="overflow-y: scroll;height:760px;overflow-x:hidden;">
+    <div class="row">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card mb-4">
+                <a href="/courses/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+                </a>
+                <div class="card-body">
+                    <a href="/courses/{{this.slug}}" style="text-decoration: none;">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="/courses/{{this.slug}}" class="btn btn-primary">Go To</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
